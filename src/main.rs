@@ -4,7 +4,8 @@ use std::io;
 use std::thread;
 use std::time::Duration;
 
-use wowint::push::wowpush::{
+
+use wowint::utility::{
     WowIntegerTarget,
     IntegerUdpSender,
     get_random_integer_between,
