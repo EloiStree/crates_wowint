@@ -12,6 +12,7 @@ use wowint::utility::{
     get_random_integer_from_list
 };
 
+
 use rand::seq::SliceRandom;
 
 fn main() -> io::Result<()> {

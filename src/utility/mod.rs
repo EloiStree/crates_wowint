@@ -7,11 +7,10 @@
 //! May the code be with you :)  
 
 
-// wowint.rs
-/// A custom integer type with additional functionality.
 
 
     
+
 
 
 use std::net::UdpSocket;
