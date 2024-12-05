@@ -4,6 +4,7 @@ use std::io;
 use std::thread;
 use std::time::Duration;
 use rand::seq::SliceRandom;
+use wowint::utility::{EnumWowKey, WowWindowKeyInt};
 use wowint::utility::{
     WowIntegerTarget,
     IntegerUdpSender,
@@ -15,7 +16,7 @@ use wowint::utility::{
 
 fn main() -> io::Result<()> {
     // Create a new WowIntegerPlayer instance with a dummy IP, port, and index
-    let player = WowIntegerTarget::new("192.168.1.114", 7000, 1);
+    let player = WowIntegerTarget::new("192.168.1.37", 7073, 2);
 
     // Send a fixed integer to the target player (using default index)
     println!("Sending a fixed integer to target player...");
@@ -24,7 +25,30 @@ fn main() -> io::Result<()> {
     let exit_condition: bool =false;
 
     // Create a list of integers
-    let arrow_list_key: Vec<i32> = vec![1037,1038,1039,1040];
+    let rotateLeft: i32 = (WowWindowKeyInt::Numpad4 as i32) + 1000;
+    let rotateRight: i32 = (WowWindowKeyInt::Numpad6 as i32) + 1000;
+    let moveFroward: i32 = (WowWindowKeyInt::Numpad8 as i32) + 1000;
+    let moveBackwardd: i32 = (WowWindowKeyInt::Numpad2 as i32) + 1000;
+    let enter: i32 =(WowWindowKeyInt::Enter as i32) + 1000;
+    let moveUp: i32 = (WowWindowKeyInt::Numpad2 as i32) + 1000;
+    let moveDown: i32 = (WowWindowKeyInt::Numpad0 as i32) + 1000;
+    let moveLeft: i32 = (WowWindowKeyInt::Numpad1 as i32) + 1000;
+    let moveRight: i32 = (WowWindowKeyInt::Numpad3 as i32) + 1000;
+    let arrow_list_key: Vec<i32> = vec![ 
+        rotateLeft,
+        rotateRight,
+        moveFroward,
+        moveBackwardd,
+        enter,
+        moveUp,
+        moveDown,
+        moveLeft,
+        moveRight
+
+
+    ];
+
+
 
 
     while !exit_condition {
