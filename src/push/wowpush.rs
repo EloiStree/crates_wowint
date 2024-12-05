@@ -11,7 +11,7 @@
 /// A custom integer type with additional functionality.
 
 
-
+    
 
 
 use std::net::UdpSocket;
@@ -94,3 +94,4 @@ pub fn get_random_integer_from_list(list: &Vec<i32>) -> i32 {
         return list[index];
     }
 }
+

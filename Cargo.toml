@@ -3,8 +3,15 @@ name = "wowint"
 version = "2024.12.52110"
 edition = "2021"
 authors =["Eloi Stree"]
-description="Learn to play with code."
-license="Beerware"
+license = "Pizza License"
+readme = "README.md"
+repository = "https://github.com/EloiStree/2024_12_05_WowIntegerWorkshopRust"
+documentation = "https://github.com/EloiStree/2024_08_29_ScratchToWarcraft"
+homepage = "https://github.com/EloiStree/2024_08_29_ScratchToWarcraft"
+description = """
+Allows to push integer to udp target in aim to remote control a game from key injection.
+"""
+keywords = ["udp", "integer", "game", "keyboard"]
 
 [dependencies]
 rand = "0.8.4"
