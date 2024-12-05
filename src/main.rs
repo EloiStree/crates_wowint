@@ -4,8 +4,8 @@ use std::io;
 use std::thread;
 use std::time::Duration;
 
-mod wow_integer;
-use wow_integer::{WowIntegerTarget, IntegerUdpSender, get_random_integer, get_random_integer_between, get_random_integer_from_list};
+mod be_eloistree_wowinteger;
+use be_eloistree_wowinteger::{WowIntegerTarget, IntegerUdpSender, get_random_integer, get_random_integer_between, get_random_integer_from_list};
 use rand::seq::SliceRandom;
 
 fn main() -> io::Result<()> {

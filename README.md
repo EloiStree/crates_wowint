@@ -26,3 +26,8 @@ There are different targets:
   - **ESP32**: Simulates keyboard, mouse, and gamepad via Bluetooth.  
   - **XESP32**: Simulates XInput via Bluetooth.  
   - **XInput Arduino**: Simulates Xbox Input via USB.  
+
+
+
+Copy: `be_eloistree_wowinteger = "2024.12.5"`  
+As Git: `be_eloistree_wowinteger = {git="https://github.com/EloiStree/2024_12_05_WowIntegerWorkshopRust.git"}`  

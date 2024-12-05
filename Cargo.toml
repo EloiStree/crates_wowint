@@ -1,6 +1,6 @@
 [package]
 name = "be_eloistree_wowinteger"
-version = "2024.12.5"
+version = "2024.12.50851"
 edition = "2021"
 authors =["Eloi Stree"]
 description="Learn to play with code."
