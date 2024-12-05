@@ -1,6 +1,6 @@
 [package]
 name = "wowint"
-version = "2024.12.52301"
+version = "2024.12.60011"
 edition = "2021"
 authors =["Eloi Stree"]
 license = "Beerware"
