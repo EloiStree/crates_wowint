@@ -1,9 +1,17 @@
+
 //! # Eloi - WowInteger 
 //! Code to send integers to a target player using UDP.  
 //! [https://github.com/EloiStree/2024_08_29_ScratchToWarcraft](https://github.com/EloiStree/2024_08_29_ScratchToWarcraft)  
 //! The aim is to learn to code by playing.    
 //! It is set by default to be played with World of Warcraft.  
 //! May the code be with you :)  
+
+
+// wowinteger.rs
+/// A custom integer type with additional functionality.
+
+
+
 
 use std::net::UdpSocket;
 use rand::Rng;

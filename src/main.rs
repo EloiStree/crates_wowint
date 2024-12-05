@@ -3,10 +3,14 @@
 use std::io;
 use std::thread;
 use std::time::Duration;
-
-mod be_eloistree_wowinteger;
-use be_eloistree_wowinteger::{WowIntegerTarget, IntegerUdpSender, get_random_integer, get_random_integer_between, get_random_integer_from_list};
 use rand::seq::SliceRandom;
+
+mod wowint;
+use wowint::udp::{WowIntegerTarget,
+    IntegerUdpSender,
+     get_random_integer_between, 
+     get_random_integer_from_list
+    };
 
 fn main() -> io::Result<()> {
     // Create a new WowIntegerPlayer instance with a dummy IP, port, and index
