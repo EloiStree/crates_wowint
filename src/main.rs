@@ -3,8 +3,7 @@
 use std::io;
 use std::thread;
 use std::time::Duration;
-
-
+use rand::seq::SliceRandom;
 use wowint::utility::{
     WowIntegerTarget,
     IntegerUdpSender,
@@ -13,7 +12,6 @@ use wowint::utility::{
 };
 
 
-use rand::seq::SliceRandom;
 
 fn main() -> io::Result<()> {
     // Create a new WowIntegerPlayer instance with a dummy IP, port, and index
