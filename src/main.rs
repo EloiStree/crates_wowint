@@ -44,8 +44,6 @@ fn main() -> io::Result<()> {
         moveDown,
         moveLeft,
         moveRight
-
-
     ];
 
 
