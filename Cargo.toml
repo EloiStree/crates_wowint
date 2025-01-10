@@ -1,11 +1,14 @@
 [package]
 name = "wowint"
-version = "2024.12.60011"
+version = "2025.1.110001"
 edition = "2021"
 authors =["Eloi Stree"]
-license = "Beerware"
+
+
+license-file = "LICENSE"
+
 readme = "README.md"
-repository = "https://github.com/EloiStree/2024_12_05_WowIntegerWorkshopRust"
+repository = "https://github.com/EloiStree/crates_wowint"
 documentation = "https://github.com/EloiStree/2024_08_29_ScratchToWarcraft"
 homepage = "https://github.com/EloiStree/2024_08_29_ScratchToWarcraft"
 description = """

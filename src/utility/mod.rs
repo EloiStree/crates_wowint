@@ -8,11 +8,6 @@
 
 
 
-
-    
-
-
-
 use std::net::UdpSocket;
 use rand::Rng;
 
@@ -425,6 +420,309 @@ pub enum WowWindowKeyInt {
     Zoom = 251,
     PA1 = 253,
 }
+
+pub struct KeywordIntegerAction;
+
+impl KeywordIntegerAction {
+    pub const BACKSPACE: i32 = 1008;
+    pub const TAB: i32 = 1009;
+    pub const CLEAR: i32 = 1012;
+    pub const ENTER: i32 = 1013;
+    pub const PAUSE: i32 = 1019;
+    pub const CAPS_LOCK: i32 = 1020;
+    pub const ESCAPE: i32 = 1027;
+    pub const SPACE: i32 = 1032;
+    pub const PAGE_UP: i32 = 1033;
+    pub const PAGE_DOWN: i32 = 1034;
+    pub const END: i32 = 1035;
+    pub const HOME: i32 = 1036;
+    pub const LEFT_ARROW: i32 = 1037;
+    pub const UP_ARROW: i32 = 1038;
+    pub const RIGHT_ARROW: i32 = 1039;
+    pub const DOWN_ARROW: i32 = 1040;
+    pub const SELECT: i32 = 1041;
+    pub const PRINT: i32 = 1042;
+    pub const EXECUTE: i32 = 1043;
+    pub const PRINT_SCREEN: i32 = 1044;
+    pub const INSERT: i32 = 1045;
+    pub const DELETE: i32 = 1046;
+    pub const HELP: i32 = 1047;
+    pub const LEFT_WINDOWS: i32 = 1091;
+    pub const RIGHT_WINDOWS: i32 = 1092;
+    pub const APPLICATIONS: i32 = 1093;
+    pub const SLEEP: i32 = 1095;
+    pub const NUMPAD0: i32 = 1096;
+    pub const NUMPAD1: i32 = 1097;
+    pub const NUMPAD2: i32 = 1098;
+    pub const NUMPAD3: i32 = 1099;
+    pub const NUMPAD4: i32 = 1100;
+    pub const NUMPAD5: i32 = 1101;
+    pub const NUMPAD6: i32 = 1102;
+    pub const NUMPAD7: i32 = 1103;
+    pub const NUMPAD8: i32 = 1104;
+    pub const NUMPAD9: i32 = 1105;
+    pub const MULTIPLY: i32 = 1106;
+    pub const ADD: i32 = 1107;
+    pub const SEPARATOR: i32 = 1108;
+    pub const SUBTRACT: i32 = 1109;
+    pub const DECIMAL: i32 = 1110;
+    pub const DIVIDE: i32 = 1111;
+    pub const F1: i32 = 1112;
+    pub const F2: i32 = 1113;
+    pub const F3: i32 = 1114;
+    pub const F4: i32 = 1115;
+    pub const F5: i32 = 1116;
+    pub const F6: i32 = 1117;
+    pub const F7: i32 = 1118;
+    pub const F8: i32 = 1119;
+    pub const F9: i32 = 1120;
+    pub const F10: i32 = 1121;
+    pub const F11: i32 = 1122;
+    pub const F12: i32 = 1123;
+    pub const F13: i32 = 1124;
+    pub const F14: i32 = 1125;
+    pub const F15: i32 = 1126;
+    pub const F16: i32 = 1127;
+    pub const F17: i32 = 1128;
+    pub const F18: i32 = 1129;
+    pub const F19: i32 = 1130;
+    pub const F20: i32 = 1131;
+    pub const F21: i32 = 1132;
+    pub const F22: i32 = 1133;
+    pub const F23: i32 = 1134;
+    pub const F24: i32 = 1135;
+    pub const NUM_LOCK: i32 = 1144;
+    pub const SCROLL_LOCK: i32 = 1145;
+    pub const LEFT_SHIFT: i32 = 1160;
+    pub const RIGHT_SHIFT: i32 = 1161;
+    pub const LEFT_CONTROL: i32 = 1162;
+    pub const RIGHT_CONTROL: i32 = 1163;
+    pub const LEFT_ALT: i32 = 1164;
+    pub const RIGHT_ALT: i32 = 1165;
+    pub const BROWSER_BACK: i32 = 1166;
+    pub const BROWSER_FORWARD: i32 = 1167;
+    pub const BROWSER_REFRESH: i32 = 1168;
+    pub const BROWSER_STOP: i32 = 1169;
+    pub const BROWSER_SEARCH: i32 = 1170;
+    pub const BROWSER_FAVORITES: i32 = 1171;
+    pub const BROWSER_HOME: i32 = 1172;
+    pub const VOLUME_MUTE: i32 = 1173;
+    pub const VOLUME_DOWN: i32 = 1174;
+    pub const VOLUME_UP: i32 = 1175;
+    pub const MEDIA_NEXT_TRACK: i32 = 1176;
+    pub const MEDIA_PREVIOUS_TRACK: i32 = 1177;
+    pub const MEDIA_STOP: i32 = 1178;
+    pub const MEDIA_PLAY: i32 = 1179;
+    pub const LAUNCH_MAIL: i32 = 1180;
+    pub const LAUNCH_MEDIA_SELECT: i32 = 1181;
+    pub const LAUNCH_APP1: i32 = 1182;
+    pub const LAUNCH_APP2: i32 = 1183;
+    pub const OEM1: i32 = 1186;
+    pub const OEM_PLUS: i32 = 1187;
+    pub const OEM_COMMA: i32 = 1188;
+    pub const OEM_MINUS: i32 = 1189;
+    pub const OEM_PERIOD: i32 = 1190;
+    pub const OEM2: i32 = 1191;
+    pub const OEM3: i32 = 1192;
+    pub const OEM4: i32 = 1219;
+    pub const OEM5: i32 = 1220;
+    pub const OEM6: i32 = 1221;
+    pub const OEM7: i32 = 1222;
+    pub const OEM8: i32 = 1223;
+    pub const OEM102: i32 = 1226;
+    pub const PROCESS_KEY: i32 = 1229;
+    pub const PACKET: i32 = 1231;
+    pub const ATTN: i32 = 1246;
+    pub const CR_SEL: i32 = 1247;
+    pub const EX_SEL: i32 = 1248;
+    pub const ERASE_EOF: i32 = 1249;
+    pub const PLAY: i32 = 1250;
+    pub const ZOOM: i32 = 1251;
+    pub const PA1: i32 = 1253;
+}
+
+
+
+       
+    pub enum XboxIntegerActionEnum {
+        RandomInput = 1399,
+        ReleaseAll = 1390,
+        ReleaseAllButMenu = 1391,
+        ClearTimedCommand = 1398,
+        PressA = 1300,
+        PressX = 1301,
+        PressB = 1302,
+        PressY = 1303,
+        PressLeftSideButton = 1304,
+        PressRightSideButton = 1305,
+        PressLeftStick = 1306,
+        PressRightStick = 1307,
+        PressMenuRight = 1308,
+        PressMenuLeft = 1309,
+        ReleaseDpad = 1310,
+        PressArrowNorth = 1311,
+        PressArrowNortheast = 1312,
+        PressArrowEast = 1313,
+        PressArrowSoutheast = 1314,
+        PressArrowSouth = 1315,
+        PressArrowSouthwest = 1316,
+        PressArrowWest = 1317,
+        PressArrowNorthwest = 1318,
+        PressXboxHomeButton = 1319,
+        RandomAxis = 1320,
+        StartRecording = 1321,
+        SetLeftStickNeutral = 1330,
+        SetLeftStickUp = 1331,
+        SetLeftStickUpRight = 1332,
+        SetLeftStickRight = 1333,
+        SetLeftStickDownRight = 1334,
+        SetLeftStickDown = 1335,
+        SetLeftStickDownLeft = 1336,
+        SetLeftStickLeft = 1337,
+        SetLeftStickUpLeft = 1338,
+        SetRightStickNeutral = 1340,
+        SetRightStickUp = 1341,
+        SetRightStickUpRight = 1342,
+        SetRightStickRight = 1343,
+        SetRightStickDownRight = 1344,
+        SetRightStickDown = 1345,
+        SetRightStickDownLeft = 1346,
+        SetRightStickLeft = 1347,
+        SetRightStickUpLeft = 1348,
+        SetLeftStickHorizontal100 = 1350,
+        SetLeftStickHorizontalNeg100 = 1351,
+        SetLeftStickVertical100 = 1352,
+        SetLeftStickVerticalNeg100 = 1353,
+        SetRightStickHorizontal100 = 1354,
+        SetRightStickHorizontalNeg100 = 1355,
+        SetRightStickVertical100 = 1356,
+        SetRightStickVerticalNeg100 = 1357,
+        SetLeftTrigger100 = 1358,
+        SetRightTrigger100 = 1359,
+        SetLeftStickHorizontal075 = 1360,
+        SetLeftStickHorizontalNeg075 = 1361,
+        SetLeftStickVertical075 = 1362,
+        SetLeftStickVerticalNeg075 = 1363,
+        SetRightStickHorizontal075 = 1364,
+        SetRightStickHorizontalNeg075 = 1365,
+        SetRightStickVertical075 = 1366,
+        SetRightStickVerticalNeg075 = 1367,
+        SetLeftTrigger075 = 1368,
+        SetRightTrigger075 = 1369,
+        SetLeftStickHorizontal050 = 1370,
+        SetLeftStickHorizontalNeg050 = 1371,
+        SetLeftStickVertical050 = 1372,
+        SetLeftStickVerticalNeg050 = 1373,
+        SetRightStickHorizontal050 = 1374,
+        SetRightStickHorizontalNeg050 = 1375,
+        SetRightStickVertical050 = 1376,
+        SetRightStickVerticalNeg050 = 1377,
+        SetLeftTrigger050 = 1378,
+        SetRightTrigger050 = 1379,
+        SetLeftStickHorizontal025 = 1380,
+        SetLeftStickHorizontalNeg025 = 1381,
+        SetLeftStickVertical025 = 1382,
+        SetLeftStickVerticalNeg025 = 1383,
+        SetRightStickHorizontal025 = 1384,
+        SetRightStickHorizontalNeg025 = 1385,
+        SetRightStickVertical025 = 1386,
+        SetRightStickVerticalNeg025 = 1387,
+        SetLeftTrigger025 = 1388,
+        SetRightTrigger025 = 1389,
+    }
+    /// Represents mapping to remote control an Xbox gamepad with events.
+    pub struct XboxIntegerAction;
+
+    impl XboxIntegerAction {
+        pub const RANDOM_INPUT: i32 = 1399;
+        pub const RELEASE_ALL: i32 = 1390;
+        pub const RELEASE_ALL_BUT_MENU: i32 = 1391;
+        pub const CLEAR_TIMED_COMMAND: i32 = 1398;
+        pub const PRESS_A: i32 = 1300;
+        pub const PRESS_X: i32 = 1301;
+        pub const PRESS_B: i32 = 1302;
+        pub const PRESS_Y: i32 = 1303;
+        pub const PRESS_LEFT_SIDE_BUTTON: i32 = 1304;
+        pub const PRESS_RIGHT_SIDE_BUTTON: i32 = 1305;
+        pub const PRESS_LEFT_STICK: i32 = 1306;
+        pub const PRESS_RIGHT_STICK: i32 = 1307;
+        pub const PRESS_MENU_RIGHT: i32 = 1308;
+        pub const PRESS_MENU_LEFT: i32 = 1309;
+        pub const RELEASE_DPAD: i32 = 1310;
+        pub const PRESS_ARROW_NORTH: i32 = 1311;
+        pub const PRESS_ARROW_NORTHEAST: i32 = 1312;
+        pub const PRESS_ARROW_EAST: i32 = 1313;
+        pub const PRESS_ARROW_SOUTHEAST: i32 = 1314;
+        pub const PRESS_ARROW_SOUTH: i32 = 1315;
+        pub const PRESS_ARROW_SOUTHWEST: i32 = 1316;
+        pub const PRESS_ARROW_WEST: i32 = 1317;
+        pub const PRESS_ARROW_NORTHWEST: i32 = 1318;
+        pub const PRESS_XBOX_HOME_BUTTON: i32 = 1319;
+        pub const RANDOM_AXIS: i32 = 1320;
+        pub const START_RECORDING: i32 = 1321;
+        pub const SET_LEFT_STICK_NEUTRAL: i32 = 1330;
+        pub const SET_LEFT_STICK_UP: i32 = 1331;
+        pub const SET_LEFT_STICK_UP_RIGHT: i32 = 1332;
+        pub const SET_LEFT_STICK_RIGHT: i32 = 1333;
+        pub const SET_LEFT_STICK_DOWN_RIGHT: i32 = 1334;
+        pub const SET_LEFT_STICK_DOWN: i32 = 1335;
+        pub const SET_LEFT_STICK_DOWN_LEFT: i32 = 1336;
+        pub const SET_LEFT_STICK_LEFT: i32 = 1337;
+        pub const SET_LEFT_STICK_UP_LEFT: i32 = 1338;
+        pub const SET_RIGHT_STICK_NEUTRAL: i32 = 1340;
+        pub const SET_RIGHT_STICK_UP: i32 = 1341;
+        pub const SET_RIGHT_STICK_UP_RIGHT: i32 = 1342;
+        pub const SET_RIGHT_STICK_RIGHT: i32 = 1343;
+        pub const SET_RIGHT_STICK_DOWN_RIGHT: i32 = 1344;
+        pub const SET_RIGHT_STICK_DOWN: i32 = 1345;
+        pub const SET_RIGHT_STICK_DOWN_LEFT: i32 = 1346;
+        pub const SET_RIGHT_STICK_LEFT: i32 = 1347;
+        pub const SET_RIGHT_STICK_UP_LEFT: i32 = 1348;
+        pub const SET_LEFT_STICK_HORIZONTAL_100: i32 = 1350;
+        pub const SET_LEFT_STICK_HORIZONTAL_NEG_100: i32 = 1351;
+        pub const SET_LEFT_STICK_VERTICAL_100: i32 = 1352;
+        pub const SET_LEFT_STICK_VERTICAL_NEG_100: i32 = 1353;
+        pub const SET_RIGHT_STICK_HORIZONTAL_100: i32 = 1354;
+        pub const SET_RIGHT_STICK_HORIZONTAL_NEG_100: i32 = 1355;
+        pub const SET_RIGHT_STICK_VERTICAL_100: i32 = 1356;
+        pub const SET_RIGHT_STICK_VERTICAL_NEG_100: i32 = 1357;
+        pub const SET_LEFT_TRIGGER_100: i32 = 1358;
+        pub const SET_RIGHT_TRIGGER_100: i32 = 1359;
+        pub const SET_LEFT_STICK_HORIZONTAL_075: i32 = 1360;
+        pub const SET_LEFT_STICK_HORIZONTAL_NEG_075: i32 = 1361;
+        pub const SET_LEFT_STICK_VERTICAL_075: i32 = 1362;
+        pub const SET_LEFT_STICK_VERTICAL_NEG_075: i32 = 1363;
+        pub const SET_RIGHT_STICK_HORIZONTAL_075: i32 = 1364;
+        pub const SET_RIGHT_STICK_HORIZONTAL_NEG_075: i32 = 1365;
+        pub const SET_RIGHT_STICK_VERTICAL_075: i32 = 1366;
+        pub const SET_RIGHT_STICK_VERTICAL_NEG_075: i32 = 1367;
+        pub const SET_LEFT_TRIGGER_075: i32 = 1368;
+        pub const SET_RIGHT_TRIGGER_075: i32 = 1369;
+        pub const SET_LEFT_STICK_HORIZONTAL_050: i32 = 1370;
+        pub const SET_LEFT_STICK_HORIZONTAL_NEG_050: i32 = 1371;
+        pub const SET_LEFT_STICK_VERTICAL_050: i32 = 1372;
+        pub const SET_LEFT_STICK_VERTICAL_NEG_050: i32 = 1373;
+        pub const SET_RIGHT_STICK_HORIZONTAL_050: i32 = 1374;
+        pub const SET_RIGHT_STICK_HORIZONTAL_NEG_050: i32 = 1375;
+        pub const SET_RIGHT_STICK_VERTICAL_050: i32 = 1376;
+        pub const SET_RIGHT_STICK_VERTICAL_NEG_050: i32 = 1377;
+        pub const SET_LEFT_TRIGGER_050: i32 = 1378;
+        pub const SET_RIGHT_TRIGGER_050: i32 = 1379;
+        pub const SET_LEFT_STICK_HORIZONTAL_025: i32 = 1380;
+        pub const SET_LEFT_STICK_HORIZONTAL_NEG_025: i32 = 1381;
+        pub const SET_LEFT_STICK_VERTICAL_025: i32 = 1382;
+        pub const SET_LEFT_STICK_VERTICAL_NEG_025: i32 = 1383;
+        pub const SET_RIGHT_STICK_HORIZONTAL_025: i32 = 1384;
+        pub const SET_RIGHT_STICK_HORIZONTAL_NEG_025: i32 = 1385;
+        pub const SET_RIGHT_STICK_VERTICAL_025: i32 = 1386;
+        pub const SET_RIGHT_STICK_VERTICAL_NEG_025: i32 = 1387;
+        pub const SET_LEFT_TRIGGER_025: i32 = 1388;
+        pub const SET_RIGHT_TRIGGER_025: i32 = 1389;
+    }
+
+
+
+
 
 impl WowWindowKeyInt {
     
