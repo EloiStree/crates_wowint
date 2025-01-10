@@ -1,6 +1,6 @@
 [package]
 name = "wowint"
-version = "2025.1.110001"
+version = "2025.1.110002"
 edition = "2021"
 authors =["Eloi Stree"]
 
